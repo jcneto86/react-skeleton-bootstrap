@@ -15,6 +15,7 @@ import "./Exemp3Col.css";
 class Exemp3Col extends Component {
   public render() {
     return (
+      
       <div id="component-name" className="conteiner">
         <Row>
           <Col
@@ -24,7 +25,8 @@ class Exemp3Col extends Component {
             lg={3}
             className="col-skeleton-height"
           >
-            <Row className='element-sticky'>
+          
+            <Row>
               <Col md={12} lg={12}>
                 <h2 className="text-center pagination-centered one-color">1</h2>
                 <Well>Look I'm in a well!</Well>
