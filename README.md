@@ -1,12 +1,11 @@
 # Skeleton React-BootStrap
 
-```
-## objective
-```
+## Objective
+
 ## React-BootStrap
-```
+
 ## How to use
-```
+
 ## Examples
-```
+
 ## Good practices
