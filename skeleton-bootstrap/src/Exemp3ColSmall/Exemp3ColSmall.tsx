@@ -12,6 +12,7 @@ import {
   Row,
   Well
 } from "react-bootstrap";
+import { Affix } from "react-overlays";
 import "./Exemp3ColSmall.css";
 
 class Exemp3ColSmall extends Component {
@@ -59,18 +60,23 @@ class Exemp3ColSmall extends Component {
           <Col xsHidden={true} smHidden={true} md={1} lg={1}>
             <Row>
               <Col md={12} lg={12}>
-                <Row className="sticky-top">
-                  <Col md={12} lg={12}>
-                    <h2 className="text-center pagination-centered one-color">
-                      1
-                    </h2>
-                    <Well>Look I'm in a well!</Well>
-                    <Well>Look I'm in a well!</Well>
-                    <Well>Look I'm in a well!</Well>
-                    <Button>01</Button>
-                    <Button>02</Button>
-                    <Button>03</Button>
-                  </Col>
+                <Row>
+                  <Affix
+                    affixStyle={{ maxWidth: "100px" }}
+                    affixClassName="col-lg-1 col-md-1"
+                  >
+                    <Col md={12} lg={12}>
+                      {/* <AutoAffix autoWidth={false}> */}
+                      <h2 className="text-center pagination-centered one-color">
+                        1
+                      </h2>
+                      <Well>
+                        Look I'm in a well! Look I'm in a well! Look I'm in a
+                        well! Look I'm in a well! Look I'm in a well!
+                      </Well>
+                      {/* </AutoAffix> */}
+                    </Col>
+                  </Affix>
                 </Row>
               </Col>
             </Row>
@@ -158,13 +164,14 @@ class Exemp3ColSmall extends Component {
               </p>
             </Jumbotron>
           </Col>
-          <Col xsHidden={true} smHidden={true} md={1} lg={1}>
-            <h2 className="text-center tree-color">3</h2>
-            <Well>Look I'm in a well!</Well>
-            <Well>Look I'm in a well!</Well>
-            <Well>Look I'm in a well!</Well>
-            <Well>Look I'm in a well!</Well>
-          </Col>
+        
+            <Col xsHidden={true} smHidden={true} md={1} lg={1}>
+              <h2 className="text-center tree-color">3</h2>
+              <Well>
+                Look I'm in a well! Look I'm in a well! Look I'm in a well! Look
+                I'm in a well! Look I'm in a well!
+              </Well>
+            </Col>
         </Row>
       </div>
     );
