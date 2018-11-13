@@ -2,50 +2,40 @@ import { Component } from "react";
 import * as React from "react";
 import {
   Button,
-  ButtonGroup,
   Col,
   Jumbotron,
+  Panel,
   Row,
   Well
 } from "react-bootstrap";
-import "./Exemp3Col.css";
+import "./Exemp1Col.css";
 
-class Exemp3Col extends Component {
+function handleClick() {
+  alert("You have clicked on me");
+}
+
+class Exemp1Col extends Component {
   public render() {
     return (
       <div id="component-name" className="conteiner">
-        <Row>
-          <Col
-            xsHidden={true}
-            smHidden={true}
-            md={4}
-            lg={3}
-          >
+        <Row className="show-grid">
+          <Col xs={12} sm={12} md={12} lg={12}>
+            <h2 className="text-center two-color">1</h2>
             <Row>
               <Col md={12} lg={12}>
                 <Row className="sticky-top">
-                  <Col md={12} lg={12} >
-                    <h2 className="text-center pagination-centered one-color">
-                      1
-                    </h2>
+                  <Col md={12} lg={6}>
                     <Well>Look I'm in a well!</Well>
                     <Well>Look I'm in a well!</Well>
-                    <Well>Look I'm in a well!</Well>
-                    <ButtonGroup>
-                      <Button>Left</Button>
-                      <Button>Middle</Button>
-                      <Button>Right</Button>
-                    </ButtonGroup>
                   </Col>
-                  <Col mdHidden={false} md={12} lgHidden={true}>
-                    <h2 className="text-center tree-color">3</h2>
+                  <Col md={12} lg={6}>
                     <Row>
                       <Col md={6} lg={12}>
-                        <Well>Look I'm in a well!</Well>
-                        <Well>Look I'm in a well!</Well>
+                        <Panel onClick={handleClick}>
+                          <Panel.Body>Basic panel example</Panel.Body>
+                        </Panel>
                       </Col>
                       <Col md={6} lg={12}>
-                        <Well>Look I'm in a well!</Well>
                         <Well>Look I'm in a well!</Well>
                       </Col>
                     </Row>
@@ -53,9 +43,6 @@ class Exemp3Col extends Component {
                 </Row>
               </Col>
             </Row>
-          </Col>
-          <Col xs={12} sm={12} md={8} lg={6}>
-            <h2 className="text-center two-color">2</h2>
             <Jumbotron className="text-center">
               <h1>Hello, world!</h1>
               <p>
@@ -136,24 +123,6 @@ class Exemp3Col extends Component {
                 <Button bsStyle="primary">Learn more</Button>
               </p>
             </Jumbotron>
-          </Col>
-          <Col
-            xsHidden={true}
-            smHidden={true}
-            mdHidden={true}
-            lg={3}
-          >
-            <h2 className="text-center tree-color">3</h2>
-            <Row>
-              <Col md={6} lg={12}>
-                <Well>Look I'm in a well!</Well>
-                <Well>Look I'm in a well!</Well>
-              </Col>
-              <Col md={6} lg={12}>
-                <Well>Look I'm in a well!</Well>
-                <Well>Look I'm in a well!</Well>
-              </Col>
-            </Row>
           </Col>
         </Row>
       </div>
@@ -161,4 +130,4 @@ class Exemp3Col extends Component {
   }
 }
 
-export default Exemp3Col;
+export default Exemp1Col;

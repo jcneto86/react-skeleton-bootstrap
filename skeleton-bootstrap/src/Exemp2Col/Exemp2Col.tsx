@@ -8,9 +8,9 @@ import {
   Row,
   Well
 } from "react-bootstrap";
-import "./Exemp3Col.css";
+import "./Exemp2Col.css";
 
-class Exemp3Col extends Component {
+class Exemp2Col extends Component {
   public render() {
     return (
       <div id="component-name" className="conteiner">
@@ -18,13 +18,14 @@ class Exemp3Col extends Component {
           <Col
             xsHidden={true}
             smHidden={true}
-            md={4}
+            md={3}
             lg={3}
+            className="col-skeleton-height"
           >
             <Row>
               <Col md={12} lg={12}>
                 <Row className="sticky-top">
-                  <Col md={12} lg={12} >
+                  <Col md={12} lg={12}>
                     <h2 className="text-center pagination-centered one-color">
                       1
                     </h2>
@@ -37,24 +38,11 @@ class Exemp3Col extends Component {
                       <Button>Right</Button>
                     </ButtonGroup>
                   </Col>
-                  <Col mdHidden={false} md={12} lgHidden={true}>
-                    <h2 className="text-center tree-color">3</h2>
-                    <Row>
-                      <Col md={6} lg={12}>
-                        <Well>Look I'm in a well!</Well>
-                        <Well>Look I'm in a well!</Well>
-                      </Col>
-                      <Col md={6} lg={12}>
-                        <Well>Look I'm in a well!</Well>
-                        <Well>Look I'm in a well!</Well>
-                      </Col>
-                    </Row>
-                  </Col>
                 </Row>
               </Col>
             </Row>
           </Col>
-          <Col xs={12} sm={12} md={8} lg={6}>
+          <Col xs={12} sm={12} md={9} lg={9} className="col-skeleton-height">
             <h2 className="text-center two-color">2</h2>
             <Jumbotron className="text-center">
               <h1>Hello, world!</h1>
@@ -137,28 +125,10 @@ class Exemp3Col extends Component {
               </p>
             </Jumbotron>
           </Col>
-          <Col
-            xsHidden={true}
-            smHidden={true}
-            mdHidden={true}
-            lg={3}
-          >
-            <h2 className="text-center tree-color">3</h2>
-            <Row>
-              <Col md={6} lg={12}>
-                <Well>Look I'm in a well!</Well>
-                <Well>Look I'm in a well!</Well>
-              </Col>
-              <Col md={6} lg={12}>
-                <Well>Look I'm in a well!</Well>
-                <Well>Look I'm in a well!</Well>
-              </Col>
-            </Row>
-          </Col>
         </Row>
       </div>
     );
   }
 }
 
-export default Exemp3Col;
+export default Exemp2Col;
