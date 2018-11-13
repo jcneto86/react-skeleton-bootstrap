@@ -10,6 +10,8 @@ import {
 } from "react-bootstrap";
 import "./Exemp3Col.css";
 
+
+
 class Exemp3Col extends Component {
   public render() {
     return (

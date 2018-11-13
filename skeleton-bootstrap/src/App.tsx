@@ -1,11 +1,11 @@
 import * as React from 'react';
 import './App.css';
-import Exemp3Col from './Exemp3Col/Exemp3Col';
+import Skeleton2Col from './Skeleton2Col/Skeleton2Col';
 
 class App extends React.Component {
   public render() {
     return (
-      <Exemp3Col/>
+      <Skeleton2Col/>
     );
   }
 }

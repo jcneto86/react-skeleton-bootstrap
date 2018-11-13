@@ -1,35 +1,38 @@
 .col-skeleton-height {
-    height: 100%;
-    padding: 20px 10px;
+  height: 100%;
+  padding: 20px 10px;
 }
 
 .one-color {
-    background-color: #27A4DD;
-    opacity: 50%;
-    top: 2vw;
+  background-color: #27a4dd;
+  opacity: 50%;
+  top: 2vw;
 }
 .two-color {
-    background-color: #9DD5C0;
-    opacity: 50%;
-    top: 2vw;
+  background-color: #9dd5c0;
+  opacity: 50%;
+  top: 2vw;
 }
 .tree-color {
-    background-color: #F39CC3;
-    opacity: 50%;
-    top: 2vw;
+  background-color: #f39cc3;
+  opacity: 50%;
+  top: 2vw;
 }
 .four-color {
-    background-color: #FF881B;
-    opacity: 50%;
-    top: 2vw;
+  background-color: #ff881b;
+  opacity: 50%;
+  top: 2vw;
 }
 .five-color {
-    background-color: #E70A52;
-    opacity: 50%;
-    top: 2vw;
+  background-color: #e70a52;
+  opacity: 50%;
+  top: 2vw;
 }
 
 .element-sticky {
-    position: sticky;
-    top: 2vw;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  top: 2vw;
 }
