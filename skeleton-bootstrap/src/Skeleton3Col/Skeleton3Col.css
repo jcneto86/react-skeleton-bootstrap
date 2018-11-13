@@ -1,0 +1,17 @@
+.col-skeleton-height {
+    height: 100vh;
+    padding: 20px 10px;
+}
+
+.one-color {
+    background-color: #27A4DD;
+    opacity: 50%;
+}
+.two-color {
+    background-color: #9DD5C0;
+    opacity: 50%;
+}
+.tree-color {
+    background-color: #F39CC3;
+    opacity: 50%;
+}
